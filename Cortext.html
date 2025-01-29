@@ -1,0 +1,309 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="Cortext.Media/logo-no-bg.ico">
+    <link rel="stylesheet" href="Cortext.css">
+    <link rel="stylesheet" href="Cortext.Styles/Home.css">
+    <link rel="stylesheet" href="Cortext.Styles/Cortext.css">
+    <link rel="stylesheet" href="Cortext.Styles/About.css">
+    <link rel="stylesheet" href="Cortext.Styles/Nav.css">
+    <link rel="stylesheet" href="Cortext.Styles/Footer.css">
+    <title>Cortext</title>
+</head>
+<body>
+    <nav class="nav-section">
+        <div class="nav-logo-container">
+            <img class="nav-logo" src="Cortext.Media/logo-no-bg.png">
+        </div>
+        <div class="nav-links-container">
+            <span class="nav-link">HOME</span>
+            <span class="nav-link">CORTEXT</span>
+            <span class="nav-link">ABOUT</span>
+        </div>
+        <button class="sign-in">Sign in</button>
+
+        <div class="settings">
+            <div class="settings-line"></div>
+            <div class="settings-line"></div>
+            <div class="settings-line"></div>
+        </div>
+
+        <div class="responsive-nav">
+            <div class="responsive-nav-logo-container">
+                <img class="responsive-nav-logo" src="Cortext.Media/logo-no-bg.png">
+                <i class="closing-icon fa fa-times"></i>
+            </div>
+
+            <div class="responsive-nav-links-container">
+                <span class="responsive-nav-link">HOME</span>
+                <span class="responsive-nav-link">CORTEXT</span>
+                <span class="responsive-nav-link">ABOUT</span>
+            </div>
+
+            <button class="responsive-sign-in">Sign in</button>
+        </div>
+    </nav>
+    
+    <section class="home-section">
+        <div class="home-header">
+            <div class="header-text">
+                <span class="header-span">Unlock the Power of<br>Text Emotion Analysis<br>wih Cortext</span>
+                <div class="header-buttons-container">
+                    <button class="header-analyse-button">Analyse Text Emotions</button>
+                    <button class="header-report-button">Read Report</button>
+                </div>
+            </div>
+            <div class="header-animation">
+                <div class="header-phrases"></div>
+                <div class="header-circle">
+                    <div class="yellow-dot"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="home-text-content">
+            <span class="home-text-title">Empower Your AI Journey with Cortext</span>
+            <span class="home-text-description">
+                Our advanced AI solutions integrate cutting-edge Machine Learning algorithms to decode 
+                complex patterns in data. Cortext's capabilities span across domains, offering actionable 
+                insights to drive innovation and decision-making.
+            </span>
+            <div class="home-images-container">
+                <div class="home-header-row">
+                    <div class="home-image-container">
+                        <img class="home-image" src="Cortext.Media/Home.Media/data_analysing.png">
+                        <span class="home-image-title">Data-Driven Insights</span>
+                        <span class="home-image-description">From data to insights—Cortext unlocks the full potential of your information.</span>
+                    </div>
+                    <div class="home-image-container">
+                        <img class="home-image" src="Cortext.Media/Home.Media/machine_learning.png">
+                        <span class="home-image-title">Machine Learning Precision</span>
+                        <span class="home-image-description">Train. Validate. Perfect. Cortext's ML tools bring your data to life.</span>
+                    </div>
+                </div>
+                <div class="home-image-container">
+                    <img class="home-image" src="Cortext.Media/Home.Media/real_time.png">
+                    <span class="home-image-title">Real-Time Analytics</span>
+                    <span class="home-image-description">Real-time decisions, real-world impact—power your strategy with Cortext.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cortext-section">
+        <span class="cortext-title">Cortext</span>
+        <span class="cortext-description">
+            Analyze and understand emotions in your data. Upload text, audio, images,<br>
+            or videos, and let Cortext deliver its purpose!
+        </span>
+
+        <textarea class="cortext-textarea"></textarea>
+        
+        <div class="cortext-inputs-container">
+            <div class="cortext-inputs-row">
+                <div class="cortext-input-container-father">
+                    <div class="audio-record">
+                        <img class="cortext-input-image record-image" src="Cortext.Media/Cortext.Media/record.png">
+                        <span class="cortext-input-text">Record Audio</span>
+                    </div>
+                </div>
+                <div class="cortext-input-container-father">
+                    <div class="cortext-input-container">
+                        <img class="cortext-input-image" src="Cortext.Media/Cortext.Media/text.png">
+                        <span class="cortext-input-text">Upload Text</span>
+                        <input class="cortext-input" type="file" accept=".txt,.doc,.docx" title="Upload Text Files (e.g., .txt, .doc)">
+                    </div>
+                    <div class="imported-file"></div>
+                </div>
+                <div class="cortext-input-container-father">
+                    <div class="blocked-input">
+                        <img class="cortext-input-image" src="Cortext.Media/Cortext.Media/audio.png">
+                        <span class="cortext-input-text">Upload Audio</span>
+                        <!-- <input class="cortext-input" type="file" accept="audio/*" title="Upload Audio Files (e.g., .mp3, .wav)"> -->
+                    </div>
+                    <div class="imported-file"></div>
+                </div>
+            </div>
+            <div class="cortext-inputs-row">
+                <div class="cortext-input-container-father">
+                    <div class="blocked-input">
+                        <img class="cortext-input-image" src="Cortext.Media/Cortext.Media/image.png">
+                        <span class="cortext-input-text">Upload Image</span>
+                        <!-- <input class="cortext-input" type="file" accept="image/*" title="Upload Image Files (e.g., .jpg, .png)"> -->
+                    </div>
+                    <div class="imported-file"></div>
+                </div>
+                <div class="cortext-input-container-father">
+                    <div class="blocked-input">
+                        <img class="cortext-input-image" src="Cortext.Media/Cortext.Media/video.png">
+                        <span class="cortext-input-text">Upload Video</span>
+                        <!-- <input class="cortext-input" type="file" accept="video/*" title="Upload Video Files (e.g., .mp4, .mov)"> -->
+                    </div>
+                    <div class="imported-file"></div>
+                </div>
+            </div>
+        </div>
+        <div class="cortext-buttons">
+            <button class="analyse-button"><span class="analyse-button-span">Analyze</span> <i class="magic-stick fa-solid fa-wand-magic-sparkles"></i></button>
+            <button class="clear-button">Clear</button>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="benefits">
+            <div class="benefit-title-container">
+                <span class="benefits-title">Benefits</span>
+                <img class="benefits-image" src="Cortext.Media/About.Media/benefits.png">
+            </div>
+            <div class="benefits-container">
+                <div class="benefits-row">
+                    <div class="benefit-container">
+                        <span class="benefit-title">Enhanced Data Insight Understanding</span>
+                        <span class="benefit-description">
+                            Gain a profound understanding of the emotional context within your data. Cortext's Emotion Analysis enhances 
+                            your data strategy by aligning with the emotional tone of your content, providing deeper insights into how it 
+                            resonates with your audience.
+                        </span>
+                    </div>
+                    <div class="benefit-container">
+                        <span class="benefit-title">Data-Driven Decision Making</span>
+                        <span class="benefit-description">
+                            Make informed decisions based on powerful emotional insights derived from your data. Cortext's comprehensive 
+                            analysis helps you interpret the emotional undercurrents in your data, enabling more refined strategies and 
+                            impactful communication.
+                        </span>
+                    </div>
+                </div>
+                <div class="benefits-row">
+                    <div class="benefit-container">
+                        <span class="benefit-title">Tailored Strategies for Impact</span>
+                        <span class="benefit-description">
+                            Craft strategies that directly connect with your audience's emotions. Cortext empowers you to create customized 
+                            messaging and actions based on a detailed emotional analysis, ensuring your communication hits the right tone 
+                            and resonates more deeply.
+                        </span>
+                    </div>
+                    <div class="benefit-container">
+                        <span class="benefit-title">Streamlined Data Optimization</span>
+                        <span class="benefit-description">
+                            Optimize your data analysis effortlessly with Cortext. Beyond basic emotion detection, our tool provides an 
+                            intuitive interface and detailed insights, ensuring that your data-driven decisions are not only accurate but 
+                            also emotionally relevant and aligned with your goals.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="usecases">
+            <span class="usecases-title">Use Cases</span>
+            <span class="usecases-description">Explore various practical applications of the technology, demonstrating its versatility<br>and impact across different industries and use cases.</span>
+            <div class="usecase-main-row">
+                <div class="usecase-sub-row">
+                    <div class="usecase-icon-container">
+                        <img class="usecase-icon" src="Cortext.Media/About.Media/user-review.png">
+                        <span class="usecase-icon-title">User Review</span>
+                        <span class="usecase-icon-description">Collect and analyze customer feedback to improve products and services.</span>
+                    </div>
+                    <div class="usecase-icon-container">
+                        <img class="usecase-icon" src="Cortext.Media/About.Media/film-making.png">
+                        <span class="usecase-icon-title">Filmmaking</span>
+                        <span class="usecase-icon-description">Streamline the creative process by generating insights and optimizing production workflows.</span>
+                    </div>
+                </div>
+                <div class="usecase-sub-row">
+                    <div class="usecase-icon-container">
+                        <img class="usecase-icon" src="Cortext.Media/About.Media/social-media.png">
+                        <span class="usecase-icon-title">Social Media</span>
+                        <span class="usecase-icon-description">Enhance content strategy through detailed engagement analysis and trend predictions.</span>
+                    </div>
+                    <div class="usecase-icon-container">
+                        <img class="usecase-icon" src="Cortext.Media/About.Media/sales-webinar.png">
+                        <span class="usecase-icon-title">Sales Webinar</span>
+                        <span class="usecase-icon-description">Boost sales efforts by delivering actionable insights from audience behavior and feedback.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="usecase-main-row">
+                <div class="usecase-sub-row">
+                    <div class="usecase-icon-container">
+                        <img class="usecase-icon" src="Cortext.Media/About.Media/product-review.png">
+                        <span class="usecase-icon-title">Feedback</span>
+                        <span class="usecase-icon-description">Identify key areas for product improvement by aggregating and interpreting customer opinions.</span>
+                    </div>
+                    <div class="usecase-icon-container">
+                        <img class="usecase-icon" src="Cortext.Media/About.Media/ad-analysis.png">
+                        <span class="usecase-icon-title">Ad Analysis</span>
+                        <span class="usecase-icon-description">Evaluate ad performance with in-depth data to refine marketing strategies.</span>
+                    </div>
+                </div>
+                <div class="usecase-sub-row">
+                    <div class="usecase-icon-container">
+                        <img class="usecase-icon" src="Cortext.Media/About.Media/mental-health.png">
+                        <span class="usecase-icon-title">Mental health</span>
+                        <span class="usecase-icon-description">Provide valuable insights into emotional patterns to support well-being and awareness.</span>
+                    </div>
+                    <div class="usecase-icon-container">
+                        <img class="usecase-icon" src="Cortext.Media/About.Media/pitch-videos.png">
+                        <span class="usecase-icon-title">Pitch Videos</span>
+                        <span class="usecase-icon-description">Craft compelling narratives and evaluate viewer engagement to perfect presentations.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-head">
+            <div class="lets-talk-container">
+                <span class="lets-talk-title">Lets talk</span>
+                <span class="lets-talk-sub-title">Have a question or comment? Let us know.</span>
+                <button class="lets-talk-contact-btn">Contact</button>
+            </div>
+            <div class="quick-links-container">
+                <span class="quick-links-title">Quick Links</span>
+                <div class="quick-links-sub-container">
+                    <span class="quick-link">Cortext Features</span>
+                    <span class="quick-link">User Testimonials</span>
+                    <span class="quick-link">Contact Us</span>
+                    <span class="quick-link">Blog</span>
+                </div>
+                <div class="footer-icons-container">
+                    <i class="footer-icon fab fa-facebook"></i>
+                    <i class="footer-icon fab fa-instagram"></i>
+                    <i class="footer-icon fab fa-linkedin"></i>
+                    <i class="footer-icon fab fa-linkedin"></i>
+                </div>
+            </div>
+        </div>
+        <div class="footer-body">
+            <div class="fssm-container">
+                <img class="fssm-logo" src="Cortext.Media/fssm-logo-no-bg.png" alt="university-logo">
+                <span class="fssm-text">This project was supervised by the professor <span class="professor">Moussanif Hajar</span><br>at the faculty of science Semlalia.</span>
+            </div>
+            <div class="future-info">
+                <span class="future-info-title">Where the Future Begins</span>
+                <div class="info-container">
+                    <span class="footer-body-info" id="Address">Avenue Prince Moulay Abdellah, B.P. 511, Marrakesh, Morocco</span>
+                    <span class="footer-body-info" id="Linkden link">https://www.linkedin.com/in/yassine-bazgour-178b73305/</span>
+                    <span class="footer-body-info" id="Linkden link">https://www.linkedin.com/in/zahra-abouhane-27b8b218a/</span>
+                    <span class="footer-body-info" id="Email">yassine.bazgour@gmail.com</span>
+                    <span class="footer-body-info" id="Email">abouhanezahra@gmail.com</span>
+                    <span class="footer-body-info" id="Email">cortext@gmail.com</span>
+                    <span class="footer-body-info" id="Phone number">+212 638 659 880</span>
+                    <span class="footer-body-info" id="Phone number">+212 700 485 361</span>
+                </div>
+                <button class="footer-body-support-btn">Support us</button>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="Cortext.Scripts/Nav.js"></script>
+    <script src="Cortext.Scripts/Footer.js"></script>
+    <script src="Cortext.Scripts/Home.js"></script>
+    <script src="Cortext.Scripts/Cortext.js"></script>
+    <script src="Cortext.js"></script>
+</body>

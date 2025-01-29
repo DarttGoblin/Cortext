@@ -1,0 +1,40 @@
+Data Loading: We load the data into the model.
+
+Backend-Frontend Connection: We use Flask to create a connection between the frontend and backend.
+
+Pipeline Usage: We use the machine learning pipeline provided by libraries like sklearn to guide the preprocessing of the data from collection to prediction, ensuring reproducibility and reducing errors.
+
+Algorithm Choice: The algorithm chosen is Support Vector Machine (SVM), which is effective for binary classification tasks.
+
+Hyperplane: The hyperplane is the decision boundary that separates the classes. In 2D, it's a line; in 3D, it's a plane; and in higher dimensions, it's referred to as a hyperplane.
+
+Margins and Support Vectors:
+
+Margins refer to the distance between the hyperplane and the data points from each class.
+Support vectors are the data points that lie closest to the hyperplane and are critical in defining the position of the hyperplane.
+Why SVM? Advantages:
+
+Effective in high-dimensional spaces.
+Works well with a clear margin of separation.
+Robust to overfitting, especially with a proper choice of kernel.
+Challenges of SVM:
+
+Computationally intensive for large datasets.
+Sensitive to feature scaling (normalization is often required).
+Choosing the right kernel and hyperparameters (e.g., C, gamma) can be challenging.
+Best Kernel Selection: We use the linear kernel because the dataset is large, has been successfully preprocessed, and it's not computationally expensive.
+
+SVM as the Best Choice: SVM is ideal for handling text data, which often has non-linear relationships due to the complexity of natural language, and can efficiently manage high-dimensional datasets.
+
+Model Persistence: We use joblib to save the model after training. This is important because training a model can take significant time, and joblib allows us to save the trained model for reuse without needing to retrain it from scratch.
+
+Vectorization: We use TF-IDF vectorization instead of CountVectorizer because TF-IDF better handles the importance of terms in relation to the document, reducing the influence of common words.
+
+Emotion Labels:
+
+0: Sadness
+1: Joy
+2: Love
+3: Anger
+4: Fear
+Dataset: The dataset used consists of tweets.
