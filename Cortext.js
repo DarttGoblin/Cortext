@@ -61,7 +61,8 @@ function AnalyseInput() {
 }
 
 function SendPrompt(text) {
-    fetch('https://web-production-90266.up.railway.app/', {
+    console.log('web-production-90266.up.railway.app');
+    fetch('web-production-90266.up.railway.app', {
         method: 'POST',
         headers: {'Content-Type': 'application/json',},
         body: JSON.stringify({ text }),
