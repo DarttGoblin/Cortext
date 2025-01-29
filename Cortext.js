@@ -61,7 +61,7 @@ function AnalyseInput() {
 }
 
 function SendPrompt(text) {
-    fetch('http://localhost:3000', {
+    fetch('https://web-production-90266.up.railway.app/', {
         method: 'POST',
         headers: {'Content-Type': 'application/json',},
         body: JSON.stringify({ text }),
