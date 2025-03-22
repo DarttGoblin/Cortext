@@ -1,0 +1,2 @@
+Project: Cortext 🧠 <br><br>
+Description: CORTEXT was the sentiment analysis project aimed at detecting emotions like sadness, joy, fear, and others. It used natural language processing (NLP) techniques to analyze and classify text into these emotional categories. The system was likely designed for use cases such as understanding user emotions in customer service, feedback, or interactive AI systems.
