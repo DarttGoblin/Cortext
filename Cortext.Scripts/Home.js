@@ -11,5 +11,5 @@ header_report_button.onclick = function() {
 }
 
 header_github_button.onclick = function() {
-    window.open('https://github.com/DarttGoblin/Herma_sever', '_blank');
+    window.open('https://github.com/DarttGoblin/Cortext_server', '_blank');
 }
