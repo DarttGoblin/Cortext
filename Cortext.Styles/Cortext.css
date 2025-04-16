@@ -81,7 +81,8 @@
     cursor: pointer;
 }
 
-.cortext-buttons {
+.cortext-buttons-container {
+    margin: 50px 0px;
     display: flex;
     gap: 100px;
 }
@@ -239,7 +240,6 @@
 
     .cortext-textarea {
         width: 100%;
-        margin-bottom: 20px;
     }
 
     .cortext-inputs-container {
@@ -265,19 +265,70 @@
 }
 
 @media only screen and (max-width: 800px) {
-    .cortext-inputs-row {
+    .cortext-buttons-container {
         display: flex;
-        flex-direction: column;
+        gap: 20px;
+        margin: 15px;
     }
 
-    .cortext-buttons {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
+    .cortext-input-container-father {
+        width: 150px;
+        height: 150px;
+    }
+
+    .cortext-input-image {
+        height: 40px;
+    }
+
+    .cortext-input-text {
+        font-size: 15px;
+    }
+
+    .live-record-container {
+        height: 130px;
     }
 }
 
 @media only screen and (max-width: 500px) {
+    .cortext-buttons-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin: 0;
+        width: 90%;
+    }
+
+    .analyse-button, .clear-button {
+        padding: 10px 10px;
+        min-width: 45%;
+        font-size: 15px;
+    }
+
+    .cortext-input-container-father {
+        width: 100px;
+        height: 100px;
+    }
+
+    .cortext-inputs-row {
+        gap: 10px;
+    }
+
+    .cortext-inputs-container {
+        gap: 0;
+    }
+
+    .cortext-input-image {
+        height: 30px;
+    }
+
+    .cortext-input-text {
+        font-size: 12px;
+    }
+
+    .live-record-container {
+        height: 80px;
+    }
     .cortext-section {
         margin-top: 100px;
     }

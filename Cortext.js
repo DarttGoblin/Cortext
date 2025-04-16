@@ -6,10 +6,6 @@ clear_button.onclick = ClearInput;
 HandleFileInputs();
 BlockUser();
 
-const randomConfidence = Array.from({ length: 5 }, () => Math.floor(Math.random() * 101));
-
-GenerateResponse('joy', randomConfidence)
-
 function AnalyseInput() {
     const textInput = cortext_textarea.value.trim();
     const textFile = cortext_input[0].files.length > 0 ? cortext_input[0].files[0] : null;
