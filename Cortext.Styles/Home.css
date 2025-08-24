@@ -44,7 +44,10 @@
     width: fit-content;
 }
 
-.header-analyse-button, .header-report-button, .header-github-button {
+.header-analyse-button, 
+.header-github-button,
+.header-report-button, 
+.header-demo-button {
     width: fit-content;
     padding: 15px 30px;
     color: white;
@@ -57,7 +60,9 @@
     border: 2px solid var(--primary-color);
 }
 
-.header-report-button, .header-github-button {
+.header-github-button,
+.header-report-button, 
+.header-demo-button {
     color: var(--primary-color);
     background: none;
     font-weight: 700;
