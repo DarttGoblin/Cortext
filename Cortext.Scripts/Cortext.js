@@ -118,7 +118,8 @@ function ResetUI() {
     clear_button.disabled = false;
 }
 
-function GenerateResponse(emotion, confidence) {
+function GenerateResponse(emotion, confidenceObj) {
+    const emotionMap = ['Sadness', 'Joy', 'Love', 'Anger', 'Fear'];
     const emotion_reponse_container = document.createElement('div');
     const chart_container = document.createElement('div');
     const canvas = document.createElement('canvas');
@@ -129,9 +130,10 @@ function GenerateResponse(emotion, confidence) {
     const confidence_span = document.createElement('span');
     const emotion_answer_span = document.createElement('span');
     const confidence_answer_span = document.createElement('span');
+    const confidence = Object.values(confidenceObj);
 
     CreateChart(confidence, canvas);
-    
+
     emotion_reponse_container.classList.add('emotion-reponse-container');
     chart_container.classList.add('chart-container');
     canvas.classList.add('emotion-chart');
@@ -147,7 +149,9 @@ function GenerateResponse(emotion, confidence) {
     emotion_span.innerHTML = 'Emotion: ';
     confidence_span.innerHTML = 'Confidence: ';
 
-    emotion_answer_span.innerHTML = emotion;
+    // map numeric emotion to string
+    const emotionName = emotionMap[emotion] || 'Unknown';
+    emotion_answer_span.innerHTML = emotionName;
     confidence_answer_span.innerHTML = `${(Math.max(...confidence) * 100).toFixed(2)}%`;
 
     emotion_answer_container.appendChild(emotion_span);
@@ -159,7 +163,7 @@ function GenerateResponse(emotion, confidence) {
     answer_container.appendChild(confidence_answer_container);
     chart_container.appendChild(canvas);
 
-    emotion_reponse_container.appendChild(answer_container)
+    emotion_reponse_container.appendChild(answer_container);
     emotion_reponse_container.appendChild(chart_container);
 
     cortext_section.appendChild(emotion_reponse_container);

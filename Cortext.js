@@ -61,27 +61,27 @@ function AnalyseInput() {
 }
 
 function SendPrompt(text) {
-    console.log('updated!');
-    fetch('https://web-production-90266.up.railway.app/', {
+    console.log('Sending text for analysis:', text);
+
+    fetch('http://127.0.0.1:5000/analyze', { 
         method: 'POST',
-        headers: {'Content-Type': 'application/json',},
+        headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({ text }),
     })
     .then(response => response.json())
     .then(data => {
-        if (data.success) {
-            console.log('emotion is:' + data.emotion);
-            GenerateResponse(data.emotion, data.confidence);
-        }
-
-        else {
-            console.error('Error:', error);
+        if (data.prediction) {
+            console.log('Predicted emotion:', data.prediction);
+            console.log('Probabilities:', data.probabilities);
+            GenerateResponse(data.prediction, data.probabilities);
+        } else if (data.error) {
+            console.error('Error from server:', data.error);
             alert('There was an error processing your text! Please try again.');
-            ResetUI();
         }
+        ResetUI();
     })
     .catch(err => {
-        console.error('Error:', err);
+        console.error('Fetch error:', err);
         alert('There was an error with the server! Please try again.');
         ResetUI();
     });
