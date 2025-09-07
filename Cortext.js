@@ -63,7 +63,7 @@ function AnalyseInput() {
 function SendPrompt(text) {
     console.log('Sending text for analysis:', text);
 
-    fetch('http://127.0.0.1:5000/analyze', { 
+    fetch('https://38db002a-a1bd-4223-a693-296135aa31b8-00-3c262720swc6y.worf.replit.dev:8080/', { 
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({ text }),

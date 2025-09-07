@@ -16,6 +16,5 @@ header_github_button.onclick = function() {
 }
 
 header_demo_button.onclick = function() {
-    alert('Demo will be available soon...');
-    // window.open('', '_blank');
+    window.open('https://drive.google.com/file/d/1DC4JGsPtdOCBigzQwdGgbPb9dpMJeUMy/view?usp=sharing', '_blank');
 }
