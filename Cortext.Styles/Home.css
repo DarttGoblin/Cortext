@@ -267,6 +267,10 @@
 }
 
 @media only screen and (max-width: 500px) {
+    .header-buttons-container {
+        align-items: center;
+    }
+
     .home-header {
         height: 1400px;
     }
@@ -282,10 +286,6 @@
         align-self: center;
     }
 
-    .header-report-button {
-        width: 100%;
-    }
-    
     .home-image {
         width: 100px;
     }
