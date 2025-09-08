@@ -82,7 +82,7 @@ function SendPrompt(text) {
     })
     .catch(err => {
         console.error('Fetch error:', err);
-        alert('There was an error with the server! Please try again.');
+        alert('There was an error with the server! Please try again, or watch demo instead.');
         ResetUI();
     });
 }
